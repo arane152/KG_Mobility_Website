@@ -1,0 +1,765 @@
+/* 전역설정 */
+* {
+    font-family: 'roboto';
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* 기본 컬러 설정 */
+:root {
+    --background-color: #666670;
+    --text-bright-color: #f1f1f1;
+    --text-row-bright-color: #f9f9f9;
+    --text-dark-color: #151515;
+    --text-row-dark-color: #252525;
+    --content-background-color-blue: #5a7597;
+    --content-background-color-bright: #f1f1f1;
+    --content-background-color-row-bright: #f9f9f9;
+    --contetn-background-color-dark-blue: #21385C;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+/* header */
+header {
+    width: 1440px;
+    height: 65px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    background-color: #666670;
+}
+
+.logo {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.menu {
+    width: 820px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 56px;
+}
+
+.menu2 {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.menu2 a {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-bright-color);
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.log {
+    font-size: 12px;
+    font-weight: regular;
+    color: var(--text-row-bright-color);
+    color: #f9f9f9;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    display: flex;
+}
+/* footer_info */
+.footer_info {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    height: 137px;
+    background-color: #2C2C2C;
+}
+
+.info {
+    font-size: 24px;
+    font-weight: regular;
+    color: #f1f1f1;
+}
+
+.info_bold {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.info:first-child {
+    margin-left: 99px;
+}
+
+.info:last-child {
+    margin-right: 99px;
+}
+/* footer_brand */
+.footer_brand {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: end;
+    width: 1440px;
+    height: 183px;
+    background-color: #3b3b3b;
+}
+
+.footer_brand_logo {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.footer_brand_copy {
+    margin-right: 100px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: regular;
+    color: #d0d0d0;
+}
+
+/* content1 */
+.content1 {
+    width: 1440px;
+    display: flex;
+    position: relative;
+}
+/* service_img */
+.service_main {
+    width: 1440px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.service_main_img {
+    width: 2000px;
+    display: flex;
+    left: center;
+}
+/* servie_txt */
+.service_txt_title{
+    width: 505px;
+    height: 88px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #21385C;
+    right: 100px;
+    top: 106px;
+    opacity: 80%;
+}
+
+.service_txt_title p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+/* content2 */
+.content2 {
+    width: 1440px;
+    height: 972px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+/* content2_title */
+.content2_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #151515;
+    margin-top: 77px;
+}   
+
+/* content2-purchase_info_bar */
+.purchase_info_bar {
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.purchase_info_bar_car {
+    width: 121px;
+    height: 122px;
+    border-radius: 16px;
+}
+
+.purchase_info_bar #current_car {
+    border: 2px solid;
+}
+
+/* content2-purchase_info */
+.purchase_info {
+    width: 1240px;
+    height: 356px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.purchase_info_car {
+    width: 610px;
+    height: 356px;
+    display: flex;
+
+}
+
+.purchase_info_txt {
+    width: 400px;
+    height: 229px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 105px;
+}
+
+.car_name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #151515;
+}
+
+.car_price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #909090;
+}
+
+.how_to_purchase {
+    width: 400px;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_box {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #666670;
+}
+
+.info_box p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.info_detail {
+    width: 1240px;
+    height: 212px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 24px;
+    background-color: #d0d0d0;
+}
+
+.info_detail_txt {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 21px;
+    font-size: 24px;
+}
+
+.info_detail_txt:first-child {
+    margin-top: 20px;
+}
+
+.info_detail_txt:last-child {
+    margin-bottom: 20px;
+}
+
+.info_detail_txt_title {
+    font-weight: bold;
+}
+
+/* content3 */
+.content3 {
+    width: 1440px;
+    height: 572px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5a7597;
+}
+
+.content3_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f9f9f9;
+    margin-top: 70px;
+}   
+
+.box_collection {
+    width: 810px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box {
+    width: 290px;
+    height: 339px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #f1f1f1;
+}
+
+.box img {
+    width: 200px;
+    height: 200px;
+    margin-top: 47px;
+}
+
+.box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #252525;
+    margin-top: 45px;
+}
+
+@media (max-width : 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        width: 393px;
+    }
+
+    header {
+        width: 393px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--background-color);
+        background-color: #666670;
+    }
+    .logo {
+        height: 21px;
+        width: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+    }
+    .logo img {
+        width: 49px;
+        height: 21px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu {
+        width: 820px;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 56px;
+    }
+    
+    .menu2 {
+        width: 77px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 15px;
+    }
+    
+    .menu2 a {
+        display: flex;
+        align-items: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--text-bright-color);
+        color: #f1f1f1;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .log {
+        display: none;
+        visibility: hidden;
+        font-size: 12px;
+        font-weight: regular;
+        color: var(--text-row-bright-color);
+        color: #f9f9f9;
+    }
+
+    .log p {
+        display: none;
+        visibility: hidden;
+    }
+    .menu_icon {
+        display: flex;
+    }
+    .menu_icon img {
+        width: 16px;
+        height: 16px;
+    }
+    .lang {
+        width: 16px;
+        height: 16px;
+    }
+    .search {
+        width: 16px;
+        height: 16px;
+    }
+
+        /* footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 393px;
+        display: flex;
+        background-color: #2C2C2C;
+        overflow: hidden;
+    }
+    /* footer_info */
+    .footer_info {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 363px;
+        height: 192px;
+        background-color: #2C2C2C;
+        margin-left: 15px;
+        margin-bottom: 22px;
+        margin-top: 16px;
+        overflow: hidden;
+    }
+
+    .info {
+        font-size: 12px;
+        font-weight: regular;
+        color: #f1f1f1;
+    }
+
+    .info_bold {
+        font-size: 12px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+
+    .info:first-child {
+        margin-left: 0px;
+    }
+
+    .info:last-child {
+        margin-right: 0px;
+    }
+    /* footer_brand */
+    .footer_brand {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 393px;
+        height: 120x;
+        background-color: #3b3b3b;
+    }
+
+    .footer_brand_logo {
+        margin-left: 15px;
+        margin-bottom: 8px;
+    }
+    .footer_brand_logo img {
+        width: 111px;
+        height: 46px;
+    }
+
+    .footer_brand_copy {
+        margin-left: 15px;
+        margin-bottom: 8px;
+        font-size: 8px;
+        font-weight: regular;
+        color: #d0d0d0;
+    }   
+
+    /* content1 */
+    .content1 {
+        width: 393px;
+        display: flex;
+        position: relative;
+    }
+    /* service_img */
+    .service_main {
+        width: 393px;
+        height: 84px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service_main_img {
+        width: 530px;
+        display: flex;
+        left: center;
+    }
+    /* servie_txt */
+    .service_txt_title{
+        width: 174px;
+        height: 24px;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background-color: #21385C;
+        right: 16px;
+        top: 30px;
+        opacity: 80%;
+    }
+
+    .service_txt_title p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+
+    /* content2 */
+    .content2 {
+        width: 393px;
+        height: 468px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+    /* content2_title */
+    .content2_title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #151515;
+        margin-top: 30px;
+    }   
+
+    /* content2-purchase_info_bar */
+    .purchase_info_bar {
+        width: 363px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .purchase_info_bar_car {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+    }
+
+    .purchase_info_bar_car img {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+    }
+
+    .purchase_info_bar #current_car img{
+        border: 1px solid;
+    }
+
+    /* content2-purchase_info */
+    .purchase_info {
+        width: 361px;
+        height: 102px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .purchase_info_car {
+        width: 174px;
+        height: 102px;
+        display: flex;
+    }
+    .purchase_info_car img {
+        width: 174px;
+        height: 102px;
+    }
+
+    .purchase_info_txt {
+        width: 78px;
+        height: 37px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 96px;
+    }
+
+    .car_name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #151515;
+    }
+
+    .car_price {
+        width: 82px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #909090;
+        margin-bottom: 12px;
+    }
+
+    .how_to_purchase {
+        width: 172px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info_box {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 8px;
+        background-color: #666670;
+    }
+
+    .info_box p {
+        font-size: 8px;
+        font-weight: 300;
+        color: #f1f1f1;
+    }
+
+    .info_detail {
+        width: 363px;
+        height: 89px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 36px;
+        background-color: #d0d0d0;
+    }
+
+    .info_detail_txt {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 21px;
+        font-size: 8px;
+    }
+
+    .info_detail_txt:first-child {
+        margin-top: 10px;
+    }
+
+    .info_detail_txt:last-child {
+        margin-bottom: 10px;
+    }
+
+    .info_detail_txt_title {
+        font-weight: bold;
+    }
+
+    /* content3 */
+    .content3 {
+        width: 393px;
+        height: 224px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #5a7597;
+    }
+
+    .content3_title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #f9f9f9;
+        margin-top: 23px;
+    }   
+
+    .box_collection {
+        width: 363px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 11px;
+    }
+
+    .box {
+        width: 174px;
+        height: 148px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 16px;
+        background-color: #f1f1f1;
+    }
+
+    .box img {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+    }
+
+    .box p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #252525;
+        margin-top: 10px;
+    }
+
+
+}
